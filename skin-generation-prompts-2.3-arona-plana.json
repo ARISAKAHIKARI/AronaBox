@@ -1,0 +1,104 @@
+[
+  {
+    "id": "illustration2",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. bright cheerful blue eyes, short sky blue bob with pink undersides, fringe covering her left eye (viewer right), small braid on viewer right, upright white rabbit ear ribbon, segmented cyan oval halo, blue sailor blouse white collar and big white chest ribbon, white skirt and white blue high top shoes. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: eat cake; draw doodle; sip strawberry milk; offer envelope; surprised; grateful bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "illustration2-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. bright cheerful blue eyes, short sky blue bob with pink undersides, fringe covering her left eye (viewer right), small braid on viewer right, upright white rabbit ear ribbon, segmented cyan oval halo, blue sailor blouse white collar and big white chest ribbon, white skirt and white blue high top shoes. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: eat cake; draw doodle; sip strawberry milk; offer envelope; surprised; grateful bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "swimsuit",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same blue bob and covered left eye as official Arona, pink hair undersides, small braid, white ear ribbon and segmented cyan oval halo; FAN summer outfit modest blue sun jacket over white T shirt and navy shorts, blue white sneakers. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: sip juice; hold beach ball; show shell; offer envelope; surprised; thanks bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "swimsuit-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same blue bob and covered left eye as official Arona, pink hair undersides, small braid, white ear ribbon and segmented cyan oval halo; FAN summer outfit modest blue sun jacket over white T shirt and navy shorts, blue white sneakers. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: sip juice; hold beach ball; show shell; offer envelope; surprised; thanks bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "arona-winter",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same blue bob and covered left eye as official Arona, pink hair undersides, small braid, white ear ribbon and segmented cyan oval halo; FAN winter costume full blue winter coat white fur trim, white scarf, navy leggings winter boots. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: hold warm cocoa; offer wrapped gift; hold tiny snowman; warm hands together; surprised; thanks bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "arona-winter-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-front_03.png",
+      "/workspace/scratch/fbc140e32df6/skin-references/arona-look_02.png"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Arona desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same blue bob and covered left eye as official Arona, pink hair undersides, small braid, white ear ribbon and segmented cyan oval halo; FAN winter costume full blue winter coat white fur trim, white scarf, navy leggings winter boots. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: hold warm cocoa; offer wrapped gift; hold tiny snowman; warm hands together; surprised; thanks bow. Character cheerful lively sweet-toothed helpful. Wholesome all ages."
+  },
+  {
+    "id": "plana-daily",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. quiet reserved expression, long white hair pink undersides, fringe covers her right eye (viewer left), visible grey purple eye viewer right, small braid viewer left, black headband white ear ribbon, segmented PINK oval halo, long black sailor coat white collar lines white chest ribbon black skirt black tights black shoes. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: view tablet; organize documents; quietly sip tea; gentle encouraging open hand; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  },
+  {
+    "id": "plana-daily-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. quiet reserved expression, long white hair pink undersides, fringe covers her right eye (viewer left), visible grey purple eye viewer right, small braid viewer left, black headband white ear ribbon, segmented PINK oval halo, long black sailor coat white collar lines white chest ribbon black skirt black tights black shoes. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: view tablet; organize documents; quietly sip tea; gentle encouraging open hand; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  },
+  {
+    "id": "plana-swimsuit",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same long white hair pink undersides, fringe covers right eye viewer left, small braid viewer left, black headband white ear ribbon and segmented PINK oval halo; FAN summer outfit modest white and black sun jacket over black T shirt and black shorts, black sneakers. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: read small notebook; observe shell; sip cool drink; offer towel; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  },
+  {
+    "id": "plana-swimsuit-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same long white hair pink undersides, fringe covers right eye viewer left, small braid viewer left, black headband white ear ribbon and segmented PINK oval halo; FAN summer outfit modest white and black sun jacket over black T shirt and black shorts, black sneakers. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: read small notebook; observe shell; sip cool drink; offer towel; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  },
+  {
+    "id": "plana-winter",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same long white hair pink undersides, fringe covers right eye viewer left, small braid viewer left, black headband white ear ribbon and segmented PINK oval halo; FAN winter costume full black winter coat white fur trim pink scarf black tights black winter boots. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas landscape1536x1152. BA game model SD chibi2.7heads, restrained cel shading. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: warm hands around tea; organize wrapped gifts; adjust scarf; observe single snowflake; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  },
+  {
+    "id": "plana-winter-portrait",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/scratch/fbc140e32df6/reference-assets/plana-reference.jpg"
+    ],
+    "prompt": "Use case stylized-concept. Production Blue Archive Plana desktop pet atlas. Reference is official identity, anatomy, hair and facial expression authority. same long white hair pink undersides, fringe covers right eye viewer left, small braid viewer left, black headband white ear ribbon and segmented PINK oval halo; FAN winter costume full black winter coat white fur trim pink scarf black tights black winter boots. Exactly12 fullbody poses arranged4columns3rows, rowmajor. Canvas PORTRAIT 1024x1536. NON CHIBI six-head-tall official character standing illustration proportions. SMALL head and elongated full length body, do not use SD proportions. Thin clean anime lines, soft luminous restrained color. Same character same outfit same scale in everycell. EACH CELL HAS 10% EMPTY TRANSPARENT PADDING ON ALL FOUR SIDES. Full halo, shoes, hair, hands entirely visible inside cell, no clipping or touching adjacent figures. True transparent background no text no frames no groundshadow. Pose0 idle attentive neutral,1thinking hand near chin,2happy,3sad,4eyesclosed resting upright,5gentlewave,6 through11 in order: warm hands around tea; organize wrapped gifts; adjust scarf; observe single snowflake; subtle surprise; reserved bow. Character reserved responsible calm subtle expression. Wholesome all ages."
+  }
+]

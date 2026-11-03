@@ -1,0 +1,26 @@
+node_modules/
+dist/
+local-models/
+private-models/
+
+Games/
+external-games-data/
+*.osz
+*.osk
+
+.runtime/
+
+# Local runtime / build output
+*.pdb
+.mihomo.exe.*
+__pycache__/
+*.pyc
+.env
+.env.*
+tts-cache/
+resources/codeagent desktop/
+resources/CodeAgentWeb/
+
+# Restored automatically from the bundled archive
+proxy-runtime/mihomo.exe
+proxy-runtime/mihomo.exe.gz

@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),{spawn}=require('node:child_process');
+function candidates({resources,exeDir,portableDir,sourceDir,custom}){const roots=[portableDir&&path.join(portableDir,'resources'),resources,exeDir&&path.join(exeDir,'resources'),sourceDir&&path.join(sourceDir,'resources')].filter(Boolean);return [...new Set([custom,...roots.map(root=>path.join(root,'codeagent desktop','CodeAgent Desktop.exe')),...roots.map(root=>path.join(root,'CodeAgentWeb','CodeAgent Desktop.exe'))].filter(Boolean))];}
+function locate(options){const paths=candidates(options);const found=paths.find(p=>{try{return fs.statSync(p).isFile();}catch{return false;}});if(!found)throw Error('未找到 CodeAgent Desktop。请将完整程序目录放到 resources\\codeagent desktop，或在“模型与连接”中选择 CodeAgent Desktop.exe。\n已检查：\n'+paths.join('\n'));return found;}
+function launch(options){if(process.platform!=='win32')return Promise.reject(Error('CodeAgent Desktop.exe 需要 Windows'));const file=locate(options);const env=require('./proxy-env.cjs').apply(process.env);delete env.ELECTRON_RUN_AS_NODE;return new Promise((resolve,reject)=>{const child=spawn(file,[],{cwd:path.dirname(file),env,detached:true,stdio:'ignore',windowsHide:false,shell:false});child.once('error',reject);child.once('spawn',()=>{child.unref();resolve(file);});});}
+module.exports={candidates,locate,launch};

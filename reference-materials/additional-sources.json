@@ -1,0 +1,82 @@
+[
+  {
+    "file": "azusa-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/azusa.png",
+    "bytes": 86458
+  },
+  {
+    "file": "azusa-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/azusa.jpg",
+    "bytes": 287970
+  },
+  {
+    "file": "azusa-swimsuit-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/azusa-swimsuit.png",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "azusa-swimsuit-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/azusa-swimsuit.jpg",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "koharu-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/koharu.png",
+    "bytes": 71004
+  },
+  {
+    "file": "koharu-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/koharu.jpg",
+    "bytes": 286747
+  },
+  {
+    "file": "momoi-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/momoi.png",
+    "bytes": 55413
+  },
+  {
+    "file": "momoi-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/momoi.jpg",
+    "bytes": 300424
+  },
+  {
+    "file": "midori-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/midori.png",
+    "bytes": 66427
+  },
+  {
+    "file": "midori-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/midori.jpg",
+    "bytes": 356088
+  },
+  {
+    "file": "aris-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/aris.png",
+    "bytes": 19449
+  },
+  {
+    "file": "aris-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/aris.jpg",
+    "bytes": 272604
+  },
+  {
+    "file": "kei-halo.png",
+    "url": "https://blue-utils.me/static/img/halo/kei.png",
+    "bytes": 12139
+  },
+  {
+    "file": "kei-lobby.jpg",
+    "url": "https://blue-utils.me/static/img/memorylobby/thumbnail/kei.jpg",
+    "bytes": 241666
+  },
+  {
+    "file": "plana-smile.jpg",
+    "url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60275/EfLBxyM63SeFAKiZN0nQ78a9j214JwHt.jpg",
+    "bytes": 73947
+  },
+  {
+    "file": "plana-pose.jpg",
+    "url": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60275/r5UbLwvzZJCEKxA0879ghGpFsSQ3tDTW.jpg",
+    "bytes": 74481
+  }
+]

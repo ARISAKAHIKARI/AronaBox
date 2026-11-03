@@ -1,0 +1,6 @@
+'use strict';
+// node make-component.cjs <folder> <skin|game|extension> <id> <version> <entry> <name>
+const fs=require('node:fs'),path=require('node:path'),{createHash}=require('node:crypto');const {Components,safeRelative}=require('./desk-data.cjs');
+const [folder,type,id,version,entry,name]=process.argv.slice(2);if(!name){console.error('用法：node make-component.cjs 文件夹 skin|game|extension 标识 1.0.0 入口文件 名称');process.exit(1);}const root=path.resolve(folder),files={};
+function walk(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){if(item.isSymbolicLink())throw Error('不允许符号链接');const file=path.join(dir,item.name);if(item.isDirectory())walk(file);else{const rel=path.relative(root,file).split(path.sep).join('/');if(rel==='component.json')continue;safeRelative(rel);files[rel]=createHash('sha256').update(fs.readFileSync(file)).digest('hex');}}}
+walk(root);const m={id,name,type,version,entry,files};const manifest=path.join(root,'component.json');const old=fs.existsSync(manifest)?fs.readFileSync(manifest):null;try{fs.writeFileSync(manifest,JSON.stringify(m,null,2));Components.prototype.inspect.call({},root);}catch(e){if(old)fs.writeFileSync(manifest,old);else fs.rmSync(manifest,{force:true});throw e;}console.log('已生成 '+manifest+'；单独压缩此文件夹即可分发。');

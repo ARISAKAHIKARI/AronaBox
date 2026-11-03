@@ -1,0 +1,13 @@
+{
+  "id": "game-2048",
+  "name": "2048",
+  "type": "game",
+  "version": "1.0.1",
+  "entry": "game2048.html",
+  "files": {
+    "game2048.css": "fb8380a80801a42b05e83762cc5fdd4361f8f701336677f405f56811073b383c",
+    "game2048.html": "ee036060673800aae234504877a8d376c74eb95da4a0dabe3ee578b2aaff1f0c",
+    "game2048.js": "82853577e45a5772ab90b8a013ee157a086e1ffc0160e51d7f6d4783082e5431",
+    "game2048-engine.js": "4526ff9a37efd254a6a2f3846ff4949cc83d1d4b3ad87cdea4dd4ce0da20d7ea"
+  }
+}

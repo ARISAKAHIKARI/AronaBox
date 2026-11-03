@@ -1,0 +1,13 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path'),{EventEmitter}=require('node:events');
+function fixture(){
+ const child=new EventEmitter();child.stdout=new EventEmitter();child.stderr=new EventEmitter();child.stdin=new EventEmitter();child.stdin.end=()=>{};child.pid=42;
+ let now=0,kills=0;const timers=new Map();let serial=0;
+ const sandbox={module:{exports:{}},Buffer,TextDecoder,Date:{now:()=>now},process:{platform:'linux',env:{},kill:()=>kills++},require:n=>n==='node:child_process'?{spawn:()=>child}:n==='./claude-config.cjs'?{agentEnv:()=>({})}:require(n),setTimeout:(f,ms)=>{const id=++serial;timers.set(id,{f,ms,interval:false});return id;},setInterval:(f,ms)=>{const id=++serial;timers.set(id,{f,ms,interval:true});return id;},clearTimeout:id=>timers.delete(id),clearInterval:id=>timers.delete(id)};
+ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../agent.cjs'),'utf8'),sandbox);
+ const events=[];const task=sandbox.module.exports.runAgent({command:'claude',cwd:'/tmp'},'complex task',null,e=>events.push(e));
+ return {child,task,events,timers,get kills(){return kills;},advance(minutes){now+=minutes*60000;for(const [id,t]of [...timers])if(t.ms<=minutes*60000){if(!t.interval)timers.delete(id);t.f();}},output(e){child.stdout.emit('data',Buffer.from(JSON.stringify(e)+'\n'));}};
+}
+test('complex CLI task survives ten minutes and prolonged silence, then returns its result',async()=>{const f=fixture();f.advance(11);assert.equal(f.kills,0);assert.match(f.events.at(-1).text,/11 分钟/);f.advance(120);assert.equal(f.kills,0);f.output({type:'result',result:'completed',session_id:'long-session'});f.child.emit('close',0);const r=await f.task.done;assert.equal(r.text,'completed');assert.equal(r.session,'long-session');assert.equal(f.timers.size,0);});
+test('recent tool output suppresses waiting notice; manual stop still terminates and clears timer',async()=>{const f=fixture();f.advance(10);f.output({type:'assistant',message:{content:[{type:'tool_use',name:'Bash'}]}});const count=f.events.length;for(const t of f.timers.values())t.f();assert.equal(f.events.length,count);const rejected=assert.rejects(f.task.done,/已停止本次回复/);f.task.cancel();assert.equal(f.kills,1);f.child.emit('close',null);await rejected;assert.equal(f.timers.size,0);});
+test('spawn errors clean waiting timer and preserve diagnostic',async()=>{const f=fixture();const rejected=assert.rejects(f.task.done,/找不到本地助手/);f.child.emit('error',Object.assign(Error('missing'),{code:'ENOENT'}));await rejected;assert.equal(f.timers.size,0);});

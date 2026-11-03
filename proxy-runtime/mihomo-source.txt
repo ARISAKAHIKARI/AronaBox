@@ -1,0 +1,12 @@
+Mihomo v1.19.31, unmodified official Windows amd64 compatible build.
+Copyright: MetaCubeX/mihomo contributors; GPL-3.0, see LICENSE-mihomo.txt.
+Binary release: https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.31
+Original asset: mihomo-windows-amd64-compatible-v1.19.31.zip
+Asset SHA-256: 93d14e9a13b49b2f2d256202d02cc8d14a7c4695edf084cae0f941986bc9c218
+Extracted executable SHA-256: 1fa8055e03596fc35167f70e9ecd1890517d38d960a39177445746a1b0defc2b
+Corresponding upstream source is included: mihomo-v1.19.31-source.tar.gz
+Source URL: https://github.com/MetaCubeX/mihomo/tree/v1.19.31
+Source archive: https://codeload.github.com/MetaCubeX/mihomo/tar.gz/refs/tags/v1.19.31
+See upstream go.mod, Makefile, and .github/workflows for dependencies and build instructions.
+Arona invokes the separate, unmodified executable through a local configuration file.
+No global proxy, TUN device, service installation, or external controller is enabled.

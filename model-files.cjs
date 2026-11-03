@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');
+const MODEL_EXTS=new Set(['.pmx','.pmd','.png','.jpg','.jpeg','.bmp','.tga','.dds','.gif','.webp','.spa','.sph']);
+function resolveModelFile(url,settings){const u=new URL(url);if(u.protocol!=='pet-model:')throw Error('无效模型协议');const motion=u.hostname==='motion';if(!motion&&u.hostname!=='model')throw Error('无效模型地址');const selected=motion?settings.mmdMotionPath:settings.mmdModelPath;if(!selected)throw Error('未选择文件');const root=fs.realpathSync(path.dirname(selected));const relative=decodeURIComponent(u.pathname).replace(/^\/+/, '');if(relative.includes('\\')||relative.includes('\0'))throw Error('无效资源路径');const target=fs.realpathSync(path.resolve(root,relative));const rel=path.relative(root,target);if(rel.startsWith('..')||path.isAbsolute(rel))throw Error('资源超出模型文件夹');if(motion?target!==fs.realpathSync(selected)||path.extname(target).toLowerCase()!=='.vmd':!MODEL_EXTS.has(path.extname(target).toLowerCase()))throw Error('不支持的资源类型');return target;}
+function modelUrl(file,motion=false){return file?'pet-model://'+(motion?'motion':'model')+'/'+encodeURIComponent(path.basename(file)):null;}
+module.exports={resolveModelFile,modelUrl};

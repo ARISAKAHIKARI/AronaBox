@@ -1,0 +1,14 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {install}=require('../terminal-edit.js');
+function setup(){
+ const calls=[],status={},term={options:{fontSize:14},selection:'',getSelection(){return this.selection;},hasSelection(){return !!this.selection;},attachCustomKeyEventHandler(fn){this.key=fn;},focus(){},paste(s){calls.push(['paste',s]);},selectAll(){calls.push(['all']);},clear(){calls.push(['clear']);},scrollToBottom(){},buffer:{active:{length:3,getLine:i=>({isWrapped:i===1,translateToString:()=>['hello',' world','next'][i]})}}};
+ const api={invoke:async(k,...args)=>{calls.push([k,...args]);if(k==='pro:clipboard-read')return '第一行\nsecond';}};
+ const editor=install(term,api,{status,resize:async()=>{}});
+ const key=(k,opts={})=>{const e={key:k,type:'keydown',ctrlKey:true,preventDefault(){this.prevented=true;},stopPropagation(){},...opts};return {handled:term.key(e),e};};
+ return {term,calls,status,editor,key};
+}
+test('Ctrl+C preserves interruption without selection and copies selection without sending input',async()=>{const h=setup();assert.equal(h.key('c').handled,true);assert.equal(h.calls.length,0);h.term.selection='中文 output';assert.equal(h.key('c').handled,false);await Promise.resolve();assert.deepEqual(h.calls,[['pro:clipboard-write','中文 output']]);});
+test('paste shortcuts use xterm paste once and suppress browser defaults',async()=>{for(const opts of [{},{shiftKey:true},{key:'Insert',ctrlKey:false,shiftKey:true}]){const h=setup(),r=h.key('v',opts);assert.equal(r.handled,false);assert.equal(r.e.prevented,true);h.key('v',{...opts,type:'keyup'});await Promise.resolve();assert.deepEqual(h.calls,[['pro:clipboard-read'],['paste','第一行\nsecond']]);}});
+test('copy all preserves wrapped lines and clear does not stop process',async()=>{const h=setup();await h.editor.run('copy-all');assert.deepEqual(h.calls,[['pro:clipboard-write','hello world\nnext']]);await h.editor.run('clear');assert.deepEqual(h.calls.at(-1),['clear']);});
+test('clipboard failures are shown and paste guard recovers',async()=>{const h=setup();let count=0;const api={invoke:async()=>{if(++count===1)throw Error('clipboard unavailable');return 'retry';}};const editor=install(h.term,api,{status:h.status,resize:async()=>{}});await editor.run('paste');assert.equal(h.status.textContent,'clipboard unavailable');await editor.run('paste');assert.deepEqual(h.calls,[['paste','retry']]);});
+test('normal Ctrl+A, Ctrl+K and IME pass through; zoom is bounded',async()=>{const h=setup();assert.equal(h.key('a').handled,true);assert.equal(h.key('k').handled,true);assert.equal(h.key('v',{isComposing:true}).handled,true);for(let i=0;i<40;i++)await h.editor.run('zoom-in');assert.equal(h.term.options.fontSize,28);for(let i=0;i<40;i++)await h.editor.run('zoom-out');assert.equal(h.term.options.fontSize,10);await h.editor.run('zoom-reset');assert.equal(h.term.options.fontSize,14);});

@@ -1,0 +1,93 @@
+[
+  {
+    "group": "new_skin_prompts",
+    "jobs": [
+      {
+        "id": "momoi",
+        "ref": "skin-references/twins-official.jpg",
+        "p": "Character Saiba Momoi 小桃, LEFT pink twin of the identity reference only, blond short hair, pink eyes, pink-accent cat-ear headphones, pink white black hoodie, white shirt blue tie, pleated skirt, boots. Do not draw green twin. Expressive competitive gamer. Last six: enthusiastically playing handheld console; triumphant victory fist; frustrated at losing while holding controller; enthusiastically pitching game story with notebook; surprised wide-eyed; cheerful small bow."
+      },
+      {
+        "id": "midori",
+        "ref": "skin-references/twins-official.jpg",
+        "p": "Character Saiba Midori 小绿, RIGHT green twin of identity reference only, blond short hair, green eyes, green-accent cat-ear headphones, green white black hoodie, white shirt blue tie, pleated skirt, boots. Do not draw pink twin. Quiet shy artist and gamer. Last six: drawing in sketchbook; carefully playing handheld console; holding up completed drawing; shy smile holding sketchbook to chest; surprised; reserved small bow."
+      },
+      {
+        "id": "kei",
+        "ref": "skin-references/kei-official.jpg",
+        "p": "Character Kei 凯伊, match NEW BODY official reference exactly: very long white hair, pink-red eyes, thin black headband, black white oversized jacket with magenta lining over dark school blazer white shirt cyan tie dark pleated skirt, dark long socks and boots, pink geometric overlapping rectangular halo. Calm reserved protective personality. No oversized railgun. Last six: closely inspecting small data tablet; quietly checking handheld game console; arms folded serious warning; gently offering help with open hand; surprised embarrassed; restrained polite bow."
+      }
+    ]
+  },
+  {
+    "group": "more_skin_prompts",
+    "jobs": [
+      {
+        "id": "azusa",
+        "p": "Shirasu Azusa standard school outfit: long silver-white hair, purple eyes, white floral hairpin, white/light pink halo, little dark feathered wings, white and navy Trinity school dress with gold/purple accents. Reserved diligent student learning friendship, easily charmed by cute things. Last six: quietly studying notebook; hugging a cute round bird plush toy; carefully inspecting an innocuous small flower; shyly offering small gift; surprised; solemn little salute."
+      },
+      {
+        "id": "azusa-swimsuit",
+        "p": "Shirasu Azusa swimsuit skin: long silver-white hair, purple eyes, white floral hairpin, recognizable halo and little dark feathered wings. Faithful summer design pink swimsuit with navy ribbon details and a LIGHT BLUE OPAQUE ruffled swim skirt, modest nonsexual vacation outfit. Ordinary standing poses only, no body emphasis. Quietly discovering beach joys. Last six: admiring seashell held at chest height; holding small beach ball; sipping cold juice from carton; hugging cute bird plush; surprised; small reserved bow."
+      },
+      {
+        "id": "koharu",
+        "p": "Shimoe Koharu standard outfit from Blue Archive official design: long pastel pink hair with little black feather wing ornaments beside head, pink-red eyes, black beret with pink trim, pink halo, black long-sleeve sailor school dress with white collar and pink tie/ribbon, dark pleated skirt, socks and boots. Earnest easily flustered remedial student, kind but blustering. Last six: struggling over school notebook; diligently taking notes; blushing mildly embarrassed face covered with closed schoolbook; firm scolding finger raised; surprised; offering a small first aid box kindly. No adult magazines or suggestive gestures."
+      },
+      {
+        "id": "aris",
+        "p": "Tendou Aris (Alice) Blue Archive standard school outfit: very long dark navy hair, straight fringe, bright blue eyes, blue geometric halo, white blue sailor blouse with blue necktie, dark pleated skirt, dark socks and blue/black shoes. Innocent cheerful android obsessed with fantasy RPGs. Last six: absorbed in handheld game console; triumphant brave hero fist-raised pose; holding tiny harmless toy sword upright; reading fantasy quest notebook; surprised; earnest little party greeting salute. Do not change to maid, armed variant or white-haired Kei."
+      }
+    ]
+  },
+  {
+    "group": "old_arona_prompts",
+    "jobs": [
+      {
+        "id": "illustration2",
+        "ref": "arona-illustration-v2.png",
+        "p": "Arona daily official-inspired blue sailor jacket white pleated skirt, blue bob hair covering one eye, side braid, white bunny-like ribbon and blue ring halo. Keep reference proportions. She is cheerful, a little clumsy, likes sweets and drawing. Last six: eating small slice of strawberry cake from a plate; drawing with crayon on little notebook; sipping strawberry milk carton; offering blue envelope; surprised; polite bow."
+      },
+      {
+        "id": "chibi2",
+        "ref": "arona-chibi-v2.png",
+        "p": "Arona Q-version, preserve reference BIG head small body 2-head chibi proportions, blue sailor jacket and white skirt. Cheerful playful. Last six: eating small slice strawberry cake from plate; drawing crayons in notebook; drinking strawberry milk carton; offering blue envelope; surprised; polite bow."
+      },
+      {
+        "id": "chibi",
+        "ref": "arona-chibi.png",
+        "p": "Arona MINI version, preserve reference rounded 3D collectible doll-like chibi, rounded pastel shading, very large head tiny body, blue sailor top white skirt, white hair ribbon blue halo. REMOVE existing dark gradient background and all backdrop glow, genuinely transparent. Redraw as 12 frames in 4x3, NOT the reference's 3x2. Last six: eating small strawberry cake; crayon doodling; drinking strawberry milk; offering blue envelope; surprised; bow."
+      },
+      {
+        "id": "arona-winter",
+        "ref": "arona-winter.png",
+        "p": "Arona winter festive skin, preserve red fur-trimmed winter coat/dress, white tights mittens red boots, Santa hat AND signature white hair ribbon and blue halo. Last six: drinking hot cocoa; offering wrapped present; holding a tiny friendly snowman; warming mittened hands; surprised; bow. No costume changes in any frame."
+      }
+    ]
+  },
+  {
+    "group": "old_plana_prompts",
+    "jobs": [
+      {
+        "id": "swimsuit",
+        "ref": "arona-swimsuit.png",
+        "p": "Arona summer: preserve blue hair, blue eyes, ribbon halo sunglasses and blue/white ruffled two-piece swimsuit; modest opaque swim skirt, no body emphasis. Cheerful sunny personality. Last six: sipping juice carton; hugging beach ball; showing pretty seashell; offering envelope; surprised; gentle bow."
+      },
+      {
+        "id": "plana-daily",
+        "ref": "plana-daily.png",
+        "p": "Plana daily: long white hair with pink underside covering one eye, black headband white ribbon red halo, black sailor coat and dark skirt, black tights boots. Calm reserved helpful personality. HAPPY is a small warm smile with relaxed hands, not hopping. WAVE is quiet small wave. Last six: reading tablet; tidying stack of papers; holding warm tea mug; gently encouraging with small open-hand gesture; slightly surprised; small polite bow. Preserve the more slender proportions of reference."
+      },
+      {
+        "id": "plana-swimsuit",
+        "ref": "plana-swimsuit.png",
+        "p": "Plana summer: long white-pink hair, black headband white ribbon red halo sunglasses, black white sailor-style two-piece swimsuit with opaque ruffled skirt and sandals. Modest nonsexual, no body emphasis. Calm quiet personality, subdued small smile for happy frame, restrained wave. Last six: reading small book; observing seashell; sipping cool drink; offering folded towel; mildly surprised; polite bow. IMPORTANT fix reference's non-square cell proportions: render correctly proportioned full bodies in the new 4x3 SQUARE-cell atlas, no squashing."
+      },
+      {
+        "id": "plana-winter",
+        "ref": "plana-winter.png",
+        "p": "Plana winter: preserve reference chibi proportions and red fur trimmed coat, dark tights mittens boots, festive hat signature ribbon and red halo, long white-pink hair. Quiet reserved caring personality. Small soft smile for happy, restrained wave. Last six: warming hands around tea mug; neatly arranging a wrapped gift; adjusting her own white scarf; looking at a delicate snowflake on mitten; mildly surprised; reserved bow."
+      }
+    ]
+  }
+]

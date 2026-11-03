@@ -1,0 +1,3 @@
+const {contextBridge,ipcRenderer}=require('electron');
+const calls=['get','tab','restore','note-save','note-delete','convert','pin-note','pick-files','remove-file','file-ocr','files-send','capture','cancel-crop','crop','clipboard-image','shot-action','text-draft','copy','component-import','component-activate','component-use'];
+contextBridge.exposeInMainWorld('tools',{invoke:(name,...args)=>{if(!calls.includes(name))throw Error('未知工具调用');return ipcRenderer.invoke('tools:'+name,...args);},on:(name,fn)=>{if(!['state','tab'].includes(name))return;ipcRenderer.on('tools:'+name,(_e,value)=>fn(value));}});

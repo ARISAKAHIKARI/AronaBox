@@ -1,0 +1,83 @@
+{
+  "name": "arona-codeagent-desktop",
+  "version": "2.7.1",
+  "private": true,
+  "description": "阿罗娜桌宠 · Claude Code · 待办",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "node bootstrap.cjs start",
+    "test": "node --test tests/*.test.cjs",
+    "dist:win": "node bootstrap.cjs dist",
+    "pack:win": "node bootstrap.cjs pack",
+    "install:intranet": "node bootstrap.cjs install",
+    "install:cn": "node bootstrap.cjs install",
+    "check:env": "node bootstrap.cjs check"
+  },
+  "devDependencies": {
+    "electron": "^44.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "local.arona.codeagent",
+    "productName": "AronaDesk",
+    "files": [
+      "*.cjs",
+      "*.html",
+      "*.css",
+      "*.js",
+      "assets/**",
+      "!bootstrap.cjs",
+      "vendor/**",
+      "!vendor/pty-*/**",
+      "!local-models/**",
+      "!private-models/**",
+      "!**/*.pmx",
+      "!**/*.pmd",
+      "!**/*.vmd",
+      "!**/*.vrm",
+      "!Games/**",
+      "!external-games-data/**",
+      "!**/*.osz",
+      "!**/*.osk",
+      "!**/*.jar",
+      "!make-component.cjs",
+      "!build-web-preload.cjs",
+      "!resources/CodeAgentWeb/**",
+      "!resources/codeagent desktop/**"
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": true,
+      "icon": "assets/app-icon.ico",
+      "signExecutable": false
+    },
+    "extraResources": [
+      {
+        "from": "edge-extension",
+        "to": "edge-extension"
+      },
+      {
+        "from": "vendor/pty-win32-x64",
+        "to": "pty-win32-x64"
+      },
+      {
+        "from": "tts-runtime",
+        "to": "tts-runtime",
+        "filter": [
+          "*.py",
+          "7zr.exe",
+          "*.txt"
+        ]
+      },
+      {
+        "from": "proxy-runtime",
+        "to": "proxy-runtime",
+        "filter": [
+          "mihomo.exe",
+          "*.txt",
+          "*.tar.gz"
+        ]
+      }
+    ]
+  }
+}

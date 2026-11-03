@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "阿罗娜网页桥接",
+  "version": "1.2.0",
+  "description": "将你手动连接的 Edge 聊天页面与本机阿罗娜桌宠连接；不读取 Cookie，不需要模型 API Key。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms",
+    "debugger"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:17869/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "连接阿罗娜"
+  }
+}

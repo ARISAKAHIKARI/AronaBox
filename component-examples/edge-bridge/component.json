@@ -1,0 +1,17 @@
+{
+  "id": "edge-bridge",
+  "name": "Edge 网页桥接",
+  "type": "extension",
+  "version": "1.2.0",
+  "entry": "manifest.json",
+  "files": {
+    "popup.css": "9ecd58c558a2d7cffa9f54b897cc7e453d8183468e1e293107484d724f294abb",
+    "network-replies.js": "f3906438e857f6fb2948b29cdeb39f8d6cc716da7a39a5f45a677f781375f20c",
+    "popup.js": "44ba8a06b23c9de3a7622bded71ca17b2d7f9eaaf101198b63efe10a27e522ff",
+    "popup.html": "8f0d6f73ad4e96f145a6643aef9bad652adfc4ed459f9fb0f3343ae01cc8f309",
+    "content.js": "de9543bd0876a47e2e9f4f61f0f92b1c5502576b031ef4a95cdc3f513cf524ce",
+    "response-text.js": "8034d0429cad50262a51efd1002f8dba38ce56f75084b0d86901b4d14c18090b",
+    "manifest.json": "ae9921e723dd0fbb947b4f9748c4733f0d376c1c35feaf495fe6a87e3525dea6",
+    "background.js": "d4b4431b3732f76f23326f6ec5a2465cd1e5241d9ec5add86519146c31ee3872"
+  }
+}

@@ -1,0 +1,8 @@
+const {contextBridge,ipcRenderer,webUtils}=require('electron');
+const calls=['proxy:status','proxy:add','proxy:delete','proxy:save','proxy:test','tts:setup','tts:setup-status','tts:setup-cancel','tts:setup-folder','tts:setup-import','tts:status','tts:save','tts:pick','tts:probe','tts:download','tts:cancel-download','tts:references','tts:reference-preview','tts:reference','tts:speak','tts:test','tts:stop','cli:backend','claude:save','prompt:save','web:diagnose','web:pick-reply','web:adapter','terminal:open','pro:web-pick','chat:copy-code','link:open','web:mode','web:open','web:hide','web:info','games:open','tools:open','pet:snooze','todo:note','pro:open','pro:mode','skills:folder','skills:import','state:get','provider:switch','profile:save','permissions:set','bridge:info','bridge:folder','bridge:copy','pet:action','todo:add','todo:toggle','todo:delete','mmd:pick','mmd:clear-motion','skin:select','asset:pick','asset:reset','folder:pick','settings:save','web:settings','agent:probe','chat:clear','chat:new','pet:expand','chat:send','chat:stop','window:show','pet:toggle','app:quit'];
+const events=['proxy:status','tts:setup-status','tts:status','tts:audio','tts:stop','chat:draft','chat:show','presence','state','tab','agent:event','pet:react','pet:toggle-chat'];
+contextBridge.exposeInMainWorld('desk',{
+  dropFiles:files=>ipcRenderer.invoke('files:drop',Array.from(files).map(file=>webUtils.getPathForFile(file))),
+  invoke:(name,...args)=>{if(!calls.includes(name))return Promise.reject(new Error('未知调用'));return ipcRenderer.invoke(name,...args);},
+  on:(name,handler)=>{if(!events.includes(name))return;const listener=(_,payload)=>handler(payload);ipcRenderer.on(name,listener);return()=>ipcRenderer.removeListener(name,listener);}
+});

@@ -1,0 +1,11 @@
+{
+  "id": "arona-reference",
+  "name": "阿罗娜 日常",
+  "type": "skin",
+  "version": "1.0.0",
+  "entry": "arona-illustration-v2.png",
+  "files": {
+    "arona-illustration-v2.png": "312eb8c8a380134ae30952d75a8d984390753e2c81c3d107289ebb27d9826901"
+  },
+  "layout": "atlas12"
+}

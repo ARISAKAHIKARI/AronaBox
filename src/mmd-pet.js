@@ -1,0 +1,19 @@
+import * as THREE from 'three';
+import {MMDLoader} from 'three/examples/jsm/loaders/MMDLoader.js';
+import {MMDAnimationHelper} from 'three/examples/jsm/animation/MMDAnimationHelper.js';
+const players=new WeakMap();
+function disposeObject(mesh){mesh?.traverse(o=>{o.geometry?.dispose();for(const m of (Array.isArray(o.material)?o.material:[o.material]))if(m){for(const v of Object.values(m))if(v?.isTexture)v.dispose();m.dispose();}});}
+function status(text){const el=document.querySelector('#mmd-status');if(el)el.textContent=text;}
+function create(node,settings){let disposed=false,mesh,helper,frame,last=0;const note=document.createElement('span');note.className='mmd-note';note.textContent='模型加载中…';node.append(note);node.classList.add('mmd-active');
+ let renderer;try{renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});}catch(e){note.textContent='无法初始化 3D';status(e.message);return ()=>{note.remove();node.classList.remove('mmd-active');};}
+ renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setClearColor(0,0);renderer.outputColorSpace=THREE.SRGBColorSpace;node.append(renderer.domElement);
+ const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(30,1,.01,10000),clock=new THREE.Clock();scene.add(new THREE.HemisphereLight(0xffffff,0x9baac0,2));const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(1,2,3);scene.add(light);
+ const resize=()=>{const w=node.clientWidth||220,h=node.clientHeight||220;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();};const observer=new ResizeObserver(resize);observer.observe(node);resize();
+ const manager=new THREE.LoadingManager();manager.onError=url=>{if(!disposed)status('部分贴图加载失败，请保留模型原文件夹结构。');};const loader=new MMDLoader(manager);
+ loader.load(settings.mmdModelUrl,m=>{if(disposed){disposeObject(m);return;}mesh=m;scene.add(mesh);mesh.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(mesh),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());mesh.position.sub(center);const distance=Math.max(size.y,size.x/camera.aspect)/2/Math.tan(THREE.MathUtils.degToRad(15))*1.2;camera.position.set(0,0,Math.max(distance,1));camera.far=Math.max(1000,distance*10);camera.updateProjectionMatrix();camera.lookAt(0,0,0);note.remove();status('本地模型已加载'+(settings.mmdMotionUrl?'，正在加载动作…':'；可选择 VMD 动作。'));
+ if(settings.mmdMotionUrl)loader.loadAnimation(settings.mmdMotionUrl,mesh,clip=>{if(disposed)return;helper=new MMDAnimationHelper();helper.add(mesh,{animation:clip,physics:false});status('模型与 VMD 已加载（未启用刚体物理）。');},undefined,e=>{if(!disposed)status('VMD 加载失败：'+(e.message||e));});
+ },undefined,e=>{if(!disposed){note.textContent='模型加载失败';status('模型加载失败：'+(e.message||e));}});
+ function animate(now){if(disposed)return;frame=requestAnimationFrame(animate);if(now-last<33)return;last=now;const dt=Math.min(clock.getDelta(),.1);if(helper)helper.update(dt);else if(mesh){mesh.rotation.y=Math.sin(now/4500)*.06;const dict=mesh.morphTargetDictionary||{},weights=mesh.morphTargetInfluences||[];const mood=node.dataset.mood;for(const name of ['笑い','にこり','まばたき','困る'])if(dict[name]!==undefined)weights[dict[name]]=name==='まばたき'?(now%5000>4780?1:0):name==='困る'?(mood==='sad'?1:0):mood==='happy'?.65:0;}renderer.render(scene,camera);}frame=requestAnimationFrame(animate);
+ return ()=>{disposed=true;cancelAnimationFrame(frame);observer.disconnect();if(helper&&mesh)helper.remove(mesh);disposeObject(mesh);renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();note.remove();node.classList.remove('mmd-active');};
+}
+window.MMDPet={sync(node,settings){const key=settings.builtinSkin==='mmd'&&!settings.skin&&settings.mmdModelUrl?settings.mmdModelUrl+'|'+(settings.mmdMotionUrl||''):'';const old=players.get(node);if(old?.key===key)return;old?.dispose();players.delete(node);if(key)players.set(node,{key,dispose:create(node,settings)});}};

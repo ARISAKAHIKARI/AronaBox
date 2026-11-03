@@ -1,0 +1,8 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const {MinesGame}=require('../mines-engine.js');
+const fresh=()=>new MinesGame(9,10,()=>0.37);
+test('first click and its neighbors are safe; exactly ten mines and valid counts',()=>{const g=fresh();g.reveal(40);for(const i of [40,...g.neighbors(40)])assert.equal(g.cells[i].mine,false);assert.equal(g.cells.filter(c=>c.mine).length,10);g.cells.forEach((c,i)=>assert.equal(c.near,g.neighbors(i).filter(j=>g.cells[j].mine).length));});
+test('flags prevent accidental reveal and can be removed',()=>{const g=fresh();g.flag(0);g.reveal(0);assert.equal(g.status,'ready');assert.equal(g.cells[0].open,false);g.flag(0);g.reveal(0);assert.equal(g.cells[0].open,true);assert.equal(g.flags,0);});
+test('flood reveal does not reveal mines',()=>{const g=fresh();g.reveal(40);assert.ok(g.opened>1);assert.ok(g.cells.every(c=>!c.open||!c.mine));});
+test('mine click loses and terminal board stops changing',()=>{const g=fresh();g.reveal(40);const i=g.cells.findIndex(c=>c.mine);g.reveal(i);assert.equal(g.status,'lost');const snapshot=JSON.stringify(g.cells);g.flag(1);g.reveal(2);assert.equal(JSON.stringify(g.cells),snapshot);});
+test('all safe squares win, flagging all mines is not required',()=>{const g=fresh();g.reveal(40);g.cells.forEach((c,i)=>{if(!c.mine)g.reveal(i);});assert.equal(g.status,'won');assert.equal(g.opened,71);assert.equal(g.flags,10);});
+test('16x16 board respects edges and mine count',()=>{const g=new MinesGame(16,40,()=>0.6);assert.equal(g.neighbors(0).length,3);g.reveal(0);assert.equal(g.cells.filter(c=>c.mine).length,40);});

@@ -1,0 +1,3 @@
+7zr.exe is the unmodified 7-Zip reduced console from https://www.7-zip.org/a/7zr.exe
+SHA256: ad4c82fadcbdf93c03b4fc440f300509c7d60c5c2f4d183e35d9d70d6957037d
+License: see LICENSE-7zip.txt. Source code and releases: https://www.7-zip.org/download.html and https://github.com/ip7z/7zip

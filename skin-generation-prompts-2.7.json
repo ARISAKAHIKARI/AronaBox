@@ -1,0 +1,74 @@
+[
+  {
+    "id": "arona-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Arona. Blue bob pink inner hair, fringe covering viewer-right eye, side braid, upright white ribbon, blue halo, cyan sailor top with white bow and cuffs, white pleated skirt, SMALL white ankle sneakers. Natural slim limbs with normal lengths. Last six: eating cake, drawing in notebook, strawberry milk carton, offering envelope, surprised, polite bow.",
+    "references": [
+      "arona-front_03.png",
+      "new-cg/anniversary2026.webp"
+    ]
+  },
+  {
+    "id": "plana-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Plana. Long white hair pale pink underside, fringe viewer-left, braid viewer-left, black headband white side ribbon, gray visible eye, pink segmented halo. Black LONG sailor coat, white necktie, dark pleated skirt, black tights and SMALL black loafers. Calm restrained emotions. Last six: tablet, organising papers, tea cup, hand to chest encouraging, mild surprise, polite bow.",
+    "references": [
+      "plana-official-intro.jpg",
+      "new-cg/anniversary2026.webp"
+    ]
+  },
+  {
+    "id": "azusa-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Azusa. Long silver hair pink lavender eyes, purple pansy cluster and black ribbon, gold laurel halo, white feather wings flowers gold chains. White cropped jacket black sailor collar/cuffs and gold buttons, yellow folded neck ribbon badge, black flared dress with layered black white ruffled hem gold trim and purple pansies at sides. Black ankle boots violet ribbon. Last six: reading study book, hugging plush as CG, small flower, deadpan unimpressed, surprised, salute.",
+    "references": [
+      "azusa-intro.jpg",
+      "azusa-lobby.jpg"
+    ]
+  },
+  {
+    "id": "koharu-redraw",
+    "prompt": "NEW Blue Archive normal non-chibi CG sprite atlas. Delicate colored linework, crisp nuanced cel shadows, soft light transitions, refined eyes and hair, recent official promotional illustration quality. Slender natural arms/legs and small hands/shoes, character's official proportions; no shortened limbs, no giant head or bulky calves, no fashion-model elongation. Neutral level camera. Exactly 12 FULL-BODY poses, FOUR COLUMNS THREE ROWS on a TALL PORTRAIT 2:3 canvas. Each figure in its own tall cell, full halo and shoes, generous gaps. TRANSPARENT background with zero alpha between characters, no glow aura haze or scene. Image1 dictates costume/identity; image2 for painting inspiration only. Do NOT use alternate costumes in image2. First six poses row-major: idle, thinking, happy, sad, sleepy, wave. Last six specified. Koharu. Short pink curled hair, black feather-wing beret, pink arrow circle halo, black cardigan pink trim white crest, white sailor collar pink ribbon, plain pink skirt, WHITE loose socks SMALL black loafers, smallblack back wings. Last six: study book, notes, flustered, scolding eyes closed mouth open arms X, surprise, first-aid kit.",
+    "references": [
+      "koharu-intro.jpg",
+      "koharu-lobby.jpg"
+    ]
+  },
+  {
+    "id": "momoi-redraw",
+    "prompt": "NEW Blue Archive normal non-chibi CG sprite atlas. Delicate colored linework, crisp nuanced cel shadows, soft light transitions, refined eyes and hair, recent official promotional illustration quality. Slender natural arms/legs and small hands/shoes, character's official proportions; no shortened limbs, no giant head or bulky calves, no fashion-model elongation. Neutral level camera. Exactly 12 FULL-BODY poses, FOUR COLUMNS THREE ROWS on a TALL PORTRAIT 2:3 canvas. Each figure in its own tall cell, full halo and shoes, generous gaps. TRANSPARENT background with zero alpha between characters, no glow aura haze or scene. Image1 dictates costume/identity; image2 for painting inspiration only. Do NOT use alternate costumes in image2. First six poses row-major: idle, thinking, happy, sad, sleepy, wave. Last six specified. Momoi. Honeyblonde bob redsmallribbons, pink cat-ear headphones, magentaeyes pinkstarhalo. White shirt cyan tie black suspenders RED WAIST BOW, blackskirt whitefrilledhem, whiteblackcoat pinkhoodlining, blackthighsocks whitestripes, pinkboots bows. No summer overalls. Last six: gameconsole, victory, frustrated retry, storynotebook, surprise, bow.",
+    "references": [
+      "momoi-intro.jpg",
+      "new-cg/gameclub-full-1.jpg"
+    ]
+  },
+  {
+    "id": "midori-redraw",
+    "prompt": "NEW Blue Archive normal non-chibi CG sprite atlas. Delicate colored linework, crisp nuanced cel shadows, soft light transitions, refined eyes and hair, recent official promotional illustration quality. Slender natural arms/legs and small hands/shoes, character's official proportions; no shortened limbs, no giant head or bulky calves, no fashion-model elongation. Neutral level camera. Exactly 12 FULL-BODY poses, FOUR COLUMNS THREE ROWS on a TALL PORTRAIT 2:3 canvas. Each figure in its own tall cell, full halo and shoes, generous gaps. TRANSPARENT background with zero alpha between characters, no glow aura haze or scene. Image1 dictates costume/identity; image2 for painting inspiration only. Do NOT use alternate costumes in image2. First six poses row-major: idle, thinking, happy, sad, sleepy, wave. Last six specified. Midori. Blondebob greenribbons, green catearheadphones, greeneyes greenstarhalo. Whiteshirt cyantie, BLACK SHORTS whitepiping, whiteblackcoat greenhoodlining, blackthighsocks whitestripes, blackboots greencuffs bows. No summer overalls. Last six: sketchbookdrawing, focused console, showing sketch, shy hugsketchbook, surprise, bow.",
+    "references": [
+      "midori-intro.jpg",
+      "new-cg/gameclub-full-1.jpg"
+    ]
+  },
+  {
+    "id": "aris-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Aris. Long straight dark navy hair long diagonal central fringe, black headband with sidebow, cyan eyes cyan overlapping rectangular halo. White shirt cyan tie, oversized blackwhitecoat bluehoodlining, black pleated skirt cyanhem, SHORT black ankle socks, SMALL blackwhite sneakers. Do NOT change to summerdress. Last six: handheld console, victory fist, heroic pose small toy sword, quest notebook, surprise, salute.",
+    "references": [
+      "aris-intro.jpg",
+      "new-cg/gameclub-full-1.jpg"
+    ]
+  },
+  {
+    "id": "kei-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Kei. Long straight white hair long diagonal centralfringe, black headband sidebow, magentaeyes pink overlapping rectangular halo. Blackwhite oversizedcoat pinklining, DARK buttoned waistcoat, whitecollar cyan tie, blackpleatedskirt cyanhem, blackthighhighs thin cyan topbands, SMALL plain black ankleboots. Last six: datatablet, checking console, calm raisedfinger warning, offeringhand, mildsurprise, politebow.",
+    "references": [
+      "kei-intro.jpg",
+      "kei-lobby.jpg"
+    ]
+  },
+  {
+    "id": "azusa-swimsuit-redraw",
+    "prompt": "Create a NEW Blue Archive character sprite atlas, not an edit of earlier generated artwork. Official CG / anniversary illustration quality: delicate colored linework, clean nuanced cel shading with soft transitions, light cool shadows, luminous but restrained eyes and hair highlights, fresh airy color. NORMAL non-chibi character proportions derived from supplied official character art. Naturally slender arms and legs, delicate ankles and hands, modest shoulder width. DO NOT artificially shorten limbs, enlarge head, inflate calves or use big boots; do not stretch into adult fashion-model proportions. Level neutral camera with minimal perspective, not low angle. Exactly TWELVE full-body figures, 4 columns by 3 rows on a TALL PORTRAIT 2:3 canvas (each cell tall enough for natural full-body anatomy). Large transparent gutters, all halos and shoes inside own cell, no cropping/overlap. True transparent background, no aura/cloud around body, no text. Costume and identity from image1. Image2 is painting and face inspiration only, NOT a costume change or copying composition. First six row-major poses: relaxed idle, thoughtful, happy, sad, sleepy eyes closed, friendly wave. Last six specified. Summer Azusa. EXACT image1 official beach outfit, not uniform from image2. Longsilverhair pinklavendereyes, goldlaurelhalo whitefeatherwings, purplepansies fruitprint yellow/pink ribbons citrus ornaments. Bluepink modest frilled two-piece swimsuit largepink chestbow, pinkwhitestripedruffles, layered frilledbottom, white blue striped long fingerless sleeves, bluebow sandals. Wholesome ordinary beach activities and neutral camera, no sensual posing or body emphasis. Last six: admiring seashell, deadpan eyes one palm STOP gesture, fruitjuice, hugging birdplush, surprise, gentle bow.",
+    "references": [
+      "azusa-swimsuit-intro.jpg",
+      "azusa-lobby.jpg"
+    ]
+  }
+]
