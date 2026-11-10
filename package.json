@@ -2,6 +2,7 @@
   "name": "arona-codeagent-desktop",
   "version": "2.7.1",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "description": "阿罗娜桌宠 · Claude Code · 待办",
   "main": "main.cjs",
   "scripts": {
@@ -52,6 +53,11 @@
       "signExecutable": false
     },
     "extraResources": [
+      { "from": "LICENSE", "to": "LICENSE" },
+      { "from": "THIRD_PARTY_NOTICES.md", "to": "THIRD_PARTY_NOTICES.md" },
+      { "from": "vendor/THREE-LICENSE.txt", "to": "third-party/THREE-LICENSE.txt" },
+      { "from": "vendor/XTERM-LICENSE.txt", "to": "third-party/XTERM-LICENSE.txt" },
+      { "from": "vendor/XTERM-FIT-LICENSE.txt", "to": "third-party/XTERM-FIT-LICENSE.txt" },
       {
         "from": "edge-extension",
         "to": "edge-extension"
